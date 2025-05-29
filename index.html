@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Concealed Carry Firearm Is Right For You?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="intro-screen" class="quiz-section active">
+            <h1>Which Concealed Carry Firearm Is Right For You?</h1>
+            <p class="intro-text">Finding the perfect concealed carry firearm can be challenging with so many options available. This quiz will help match you with firearms that best suit your preferences, experience level, and carrying style.</p>
+            <p class="disclaimer">DISCLAIMER: This quiz is for entertainment and informational purposes only. Always consult with a firearms professional, follow all applicable laws, and receive proper training before purchasing or carrying any firearm.</p>
+            <button id="start-btn" class="btn">Start Quiz</button>
+        </div>
+
+        <div id="question-screen" class="quiz-section">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+                <div id="question-counter">Question 1 of 10</div>
+            </div>
+            <h2 id="question-text">Question text goes here</h2>
+            <div id="answer-buttons" class="btn-grid">
+                <!-- Answer buttons will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <div id="results-screen" class="quiz-section">
+            <h1>Your Ideal Concealed Carry Match</h1>
+            <div class="results-container">
+                <div class="primary-recommendation">
+                    <h2>Primary Recommendation</h2>
+                    <div id="primary-firearm" class="firearm-card">
+                        <div class="firearm-image" id="primary-image"></div>
+                        <h3 id="primary-title">Firearm Name</h3>
+                        <p id="primary-description">Description goes here</p>
+                    </div>
+                </div>
+                <div class="secondary-recommendation">
+                    <h2>Alternative Option</h2>
+                    <div id="secondary-firearm" class="firearm-card">
+                        <div class="firearm-image" id="secondary-image"></div>
+                        <h3 id="secondary-title">Firearm Name</h3>
+                        <p id="secondary-description">Description goes here</p>
+                    </div>
+                </div>
+            </div>
+            <div class="results-explanation">
+                <h3>Why These Firearms Match Your Needs</h3>
+                <p id="results-explanation-text">Explanation text goes here</p>
+                <div class="disclaimer-box">
+                    <h4>Important Considerations</h4>
+                    <p>This quiz provides suggestions based on your answers, but the best concealed carry firearm for you depends on many factors including local laws, your specific needs, and personal comfort with the firearm.</p>
+                    <p>Before making any purchase:</p>
+                    <ul>
+                        <li>Check your local laws regarding concealed carry</li>
+                        <li>Try handling and shooting different firearms at a range</li>
+                        <li>Seek professional training</li>
+                        <li>Consider factors like maintenance, ammunition availability, and holster options</li>
+                    </ul>
+                </div>
+            </div>
+            <button id="restart-btn" class="btn">Retake Quiz</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created for educational and entertainment purposes only. Not legal advice. Always follow local laws and safety guidelines.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
